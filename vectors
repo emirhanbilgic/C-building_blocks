@@ -1,0 +1,29 @@
+/*
+In C++, vector is a container class that provides a dynamic array-like data structure. Unlike fixed-size arrays, the size of a vector can be changed at runtime, making it more flexible and convenient to use.
+
+Here's an example of using vector to store a list of integers:
+*/
+
+#include <iostream>
+#include <vector>
+
+int main() {
+  // create an empty vector of integers
+  std::vector<int> numbers;
+
+  // add some integers to the vector
+  numbers.push_back(1);
+  numbers.push_back(2);
+  numbers.push_back(3);
+  numbers.push_back(4);
+
+  // print the contents of the vector
+  for (int i = 0; i < numbers.size(); i++) {
+    std::cout << numbers[i] << " ";
+  }
+  std::cout << std::endl;
+
+  return 0;
+}
+
+//outputs: 1 2 3 4 
